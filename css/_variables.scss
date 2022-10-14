@@ -1,0 +1,22 @@
+$primary: #1F2435;
+$seondary: #C5DF5C;
+$button_lime: #EEF9A8;
+
+.btn_brand {
+    background-color: $button_lime;
+    padding: 1.125rem 1.5rem;
+    max-height: 100%;
+    height: 100%;
+}
+
+.border_brand {
+    border: 1px solid #E8E7ED;
+}
+
+.text_brand {
+    color: $seondary;
+}
+
+.z-index-min-1 {
+    z-index: -1;
+}

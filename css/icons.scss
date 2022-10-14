@@ -1,0 +1,10 @@
+@import "_variables.scss";
+
+.icon-star {
+    width: 32px;
+    height: 32px;
+    background: $button_lime;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
