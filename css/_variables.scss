@@ -5,8 +5,9 @@ $button_lime: #EEF9A8;
 .btn_brand {
     background-color: $button_lime;
     padding: 1.125rem 1.5rem;
-    max-height: 100%;
-    height: 100%;
+    max-width: 160px;
+    max-height: 56px;
+    font-size: 1rem;
 }
 
 .border_brand {
@@ -19,4 +20,8 @@ $button_lime: #EEF9A8;
 
 .z-index-min-1 {
     z-index: -1;
+}
+
+.font_brand_light {
+    font-family: 'Outfit-Light', sans-serif;
 }
