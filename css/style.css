@@ -22,6 +22,13 @@
   font-family: 'Outfit-Light', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Outfit-Light';
   src: url(../fonts/Outfit-Light.ttf);
@@ -102,16 +109,21 @@ body::-webkit-scrollbar-track {
   border-radius: 1rem;
 }
 
-.wrapper .services {
-  background-image: url("/imgs/services background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2rem;
+.active {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #000;
 }
 
 .wrapper .tbilisi {
   font-size: 12px;
   color: #C5DF5C;
+}
+
+.wrapper .contact {
+  height: 616px;
+  position: relative;
+  top: calc(0px + 450px);
 }
 
 .wrapper .contact-card {
@@ -122,13 +134,14 @@ body::-webkit-scrollbar-track {
 
 .wrapper .choose_form {
   background: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 126px;
 }
 
 .wrapper .review {
@@ -140,46 +153,60 @@ body::-webkit-scrollbar-track {
 .wrapper #details {
   height: 541px;
   position: relative;
-  top: calc(0px + 236px);
+  top: calc(0px + 400px);
 }
 
 .wrapper #details .btn_flight {
   width: 163px;
   height: 63px;
+  background-color: #D4D9E1;
 }
 
 .wrapper #details .btn_hotel {
   width: 163px;
   height: 63px;
+  background-color: #D4D9E1;
+}
+
+.wrapper #details .btn_plus {
+  background-color: #1E3764;
+  color: #fff;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper #details .btn_minus {
+  background-color: #1E3764;
+  color: #fff;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+.wrapper #details .btn_request {
+  background: #EEF9A8;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper .services {
   height: 960px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  top: calc(0px + 192px);
-}
-
-.wrapper .contact {
-  height: 616px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  top: calc(0px + 192px);
+  top: calc(0px + 292px);
 }
 
 .wrapper .intro {
   position: relative;
-  top: calc(0px + 187px);
+  top: calc(0px + 188px);
   height: 748px;
 }
 
@@ -190,14 +217,8 @@ body::-webkit-scrollbar-track {
 
 .wrapper #blog {
   height: 960px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  top: calc(0px + 192px);
+  top: calc(0px + 492px);
 }
 
 .wrapper #blog .blog_svg {
